@@ -1,11 +1,10 @@
 import React, { useContext } from "react";
 import "./Intro.css";
-import Vector1 from "../../img/Vector1.png";
-import Vector2 from "../../img/Vector2.png";
-import boy from "../../img/boy.gif";
+import seo from "../../img/seo.png";
+import web from "../../img/coding.png";
 import glassesimoji from "../../img/glassesimoji.png";
-import thumbup from "../../img/thumbup.png";
-import crown from "../../img/crown.png";
+import ux from "../../img/ux.png";
+import cnt from "../../img/cnt.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
@@ -28,7 +27,7 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>We are</span>
-          <div className="ame">CW2SG Solutions</div>
+          <div className="ame">CW2SG Services</div>
           
           <span>
             IT Experts with high level of experience in Content Writing,  designing
@@ -64,7 +63,7 @@ const Intro = () => {
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv img={crown} text1="CONTENT WRITING " text2="" />
+          <FloatinDiv img={cnt} text1="CONTENT WRITING " text2="" />
         </motion.div>
         
 
@@ -78,7 +77,7 @@ const Intro = () => {
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="WEBSITE DEVELOPMENT" text2="" />
+          <FloatinDiv img={web} text1="WEBSITE DEVELOPMENT" text2="" />
         </motion.div>
         <motion.div
           initial={{ left: "9rem", top: "5rem" }}
@@ -87,7 +86,7 @@ const Intro = () => {
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="SEARCH ENGINE OPTIMIZATION" text2="" />
+          <FloatinDiv img={seo} text1="SEARCH ENGINE OPTIMIZATION" text2="" />
         </motion.div>
         
         <motion.div
@@ -97,7 +96,7 @@ const Intro = () => {
           className="floating-div"
           
         >
-          <FloatinDiv img={crown} text1="GRAPHIC DESIGN " text2="" />
+          <FloatinDiv img={ux} text1="GRAPHIC DESIGN " text2="" />
         </motion.div>
 
 
