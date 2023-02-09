@@ -1,6 +1,6 @@
 import React from "react";
 import Toggle from "../Toggle/Toggle";
-import logo from "../../img/cw2sglogo.png";
+import logo from "../../img/cw2sglogo2.png";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 const navbar = () => {
