@@ -5,41 +5,33 @@ import "swiper/css";
 
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
-import profilePic1 from "../../img/profile1.jpg";
+import profilePic1 from "../../img/profile1.jpeg";
 import profilePic2 from "../../img/profile2.jpg";
-import profilePic3 from "../../img/profile3.jpg";
-import profilePic4 from "../../img/profile4.jpg";
+
 
 const Testimonial = () => {
   const clients = [
     {
       img: profilePic1,
+      name:"Usama Hammad",
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+        "An experienced Graphic Designer and Web Developer bringing more than 4 year’s of experience applying technical and creative abilities to diverse customer projects. Having great Communication skills Highly effective at collaborating with artistic project, production and administrative leadership to complete tasks according to schedule goals.",
     },
     {
       img: profilePic2,
+      name:"Dawer Iqbal",
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+        "An experienced Content Writer and SEO master bringing more than 4 year’s of experience in Content Writing, as well as SEO. Currently an Admin (CTO) at ThePantherTech.com and Co-CEO at WhatGamingGear.com. His specialty is writing SEO Optimized Web Content for Tech and Gaming Niche.",
     },
-    {
-      img: profilePic3,
-      review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
-    },
-    {
-      img: profilePic4,
-      review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
-    },
+   
   ];
 
   return (
     <div className="t-wrapper" id="testimonial">
       <div className="t-heading">
-        <span>Clients always get </span>
-        <span>Exceptional Work </span>
-        <span>from me...</span>
+        <span></span>
+        <span> CW2SG </span>
+        <span>Team Members:</span>
       <div className="blur t-blur1" style={{ background: "var(--purple)" }}></div>
       <div className="blur t-blur2" style={{ background: "skyblue" }}></div>
 
@@ -55,7 +47,8 @@ const Testimonial = () => {
             <SwiperSlide key={index}>
               <div className="testimonial">
                 <img src={client.img} alt="" />
-                <span>{client.review}</span>
+                <div className="name"><b>{client.name}</b></div>
+                <div className="detail"> {client.review}</div>
               </div>
             </SwiperSlide>
           );

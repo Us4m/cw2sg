@@ -10,13 +10,15 @@ const Footer = () => {
     <div className="footer">
       <img src={Wave} alt="" style={{ width: "100%" }} />
       <div className="f-content">
-        <span>contact@cwsg.com</span>
-        <div className="f-icons">
-          <Insta color="white" size={"3rem"} />
-          <Facebook color="white" size={"3rem"} />
-          <Gitub color="white" size={"3rem"} />
+      Copyright 2022.  All Rights Reserved
+      <div className="f-icons">
+          <Insta color="white" size={"2rem"} />
+          <Facebook color="white" size={"2rem"} />
+          <Gitub color="white" size={"2rem"} />
         </div>
+       
       </div>
+      
     </div>
   );
 };

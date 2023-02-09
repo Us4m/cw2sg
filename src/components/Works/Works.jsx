@@ -21,21 +21,21 @@ const Works = () => {
         <div className="awesome">
           {/* dark Mode */}
           <span style={{ color: darkMode ? "white" : "" }}>
-            Works for All these
-          </span>
-          <span>Brands & Clients</span>
+            What is 
+          </span><span>CW2SG</span>
+          
           <spane>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
-            <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
-            <br />
-            y dummy text of printingLorem
-            <br />
-            ispum is simpley dummy text of printing
+          We are Two (2) Individuals working together to help you grow the Business.<br />
+           We are professionals in the field of Content Writing (C), Web Development (W),<br />
+            SEO (S), and Graphics (G), making CW2SG.<br />
+            Our mission is to Give Life to your Imagination by making an incredibly beautiful<br />
+             Website,
+            filling it up with that alluring Content, and ranking it on Google with our 
+            <br />SEO. On top of that, we can provide you with Graphics Services like Logos,
+            <br /> UI/UX Design, Animations, and much more.
           </spane>
           <Link to="contact" smooth={true} spy={true}>
-            <button className="button s-button">Hire Me</button>
+            <button className="button s-button">Contact Us</button>
           </Link>
           <div
             className="blur s-blur1"

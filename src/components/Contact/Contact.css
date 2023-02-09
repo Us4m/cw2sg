@@ -13,7 +13,11 @@
     position: relative;
     flex: 1;
 }
-
+.msg{
+    color: red;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .c-right>form
 {
     display: flex;

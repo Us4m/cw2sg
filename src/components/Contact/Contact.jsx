@@ -1,8 +1,11 @@
 import React, { useContext, useRef, useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { themeContext } from "../../Context";
 const Contact = () => {
+  const notify = () => toast("Message Sent Sucessfully !");
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   const form = useRef();
@@ -10,13 +13,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_2mu5xtl",
-        "template_m5udu2c",
-        form.current,
-        "VLwg1ltOWvnCYAiK_"
-      )
+    emailjs.sendForm('service_c5wpc5m', 'template_v32hk02', form.current, 'QuxLjFHs6UIqU5mw-')
       .then(
         (result) => {
           console.log(result.text);
@@ -27,6 +24,7 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+      e.target.reset()
   };
 
   return (
@@ -49,8 +47,9 @@ const Contact = () => {
           <input type="text" name="user_name" className="user"  placeholder="Name"/>
           <input type="email" name="user_email" className="user" placeholder="Email"/>
           <textarea name="message" className="user" placeholder="Message"/>
-          <input type="submit" value="Send" className="button"/>
-          <span>{done && "Thanks for Contacting me"}</span>
+          <input onClick={notify} type="submit" value="Send" className="button"/>
+          <ToastContainer />
+          <div className="msg">{done && "Thanks for Contacting CW2SG Our Company Will Contact Soon !"}</div>
           <div
             className="blur c-blur1"
             style={{ background: "var(--purple)" }}

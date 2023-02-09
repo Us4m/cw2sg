@@ -12,6 +12,16 @@
 .t-heading{
     align-self: start;
 }
+.name{
+    margin-top: 20px;
+    font-size: 16px;
+    color: rgb(171, 173, 173);
+}
+.detail{
+    margin-top: 30px;
+    font-size: 16px;
+    color: rgb(206, 209, 209);
+}
 .t-heading>*{
     font-size: 2rem;
     font-weight: bold;
