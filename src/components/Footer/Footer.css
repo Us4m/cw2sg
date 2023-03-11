@@ -26,4 +26,10 @@
   .f-content{
     transform: scale(.5);
   }
+  .footer{
+    margin-top: -300px;
+  }
+  .f-content{
+    margin-top: 50px;
+  }
 }
