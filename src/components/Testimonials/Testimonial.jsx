@@ -7,6 +7,7 @@ import { Pagination } from "swiper";
 import "swiper/css/pagination";
 import profilePic1 from "../../img/profile1.jpeg";
 import profilePic2 from "../../img/profile2.jpg";
+import profilePic3 from "../../img/download.png";
 
 
 const Testimonial = () => {
@@ -18,11 +19,19 @@ const Testimonial = () => {
         "An experienced Graphic Designer and Web Developer bringing more than 4 year’s of experience applying technical and creative abilities to diverse customer projects. Having great Communication skills Highly effective at collaborating with artistic project, production and administrative leadership to complete tasks according to schedule goals.",
     },
     {
+      img: profilePic3,
+      name:"Ayesha Shehzad",
+      review:
+        "An experienced Wordpress Developer specialized in creating, maintaining, and customizing websites using the WordPress platform. Proficient in the technical aspects of WordPress, including its programming languages such as PHP, HTML, CSS, and JavaScript.",
+    },
+    {
       img: profilePic2,
       name:"Dawer Iqbal",
       review:
         "An experienced Content Writer and SEO master bringing more than 4 year’s of experience in Content Writing, as well as SEO. Currently an Admin (CTO) at ThePantherTech.com and Co-CEO at WhatGamingGear.com. His specialty is writing SEO Optimized Web Content for Tech and Gaming Niche.",
     },
+
+   
    
   ];
 
@@ -38,6 +47,7 @@ const Testimonial = () => {
       
       <Swiper
         // install Swiper modules
+      
         slidesPerView={1}
         pagination={{ clickable: true }}
       >
