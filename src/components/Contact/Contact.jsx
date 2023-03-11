@@ -33,11 +33,11 @@ const Contact = () => {
       <div className="w-left">
         <div className="awesome">
           {/* darkMode */}
-          <span style={{color: darkMode?'white': ''}}>Get in Touch</span>
-          <span>Contact me</span>
+          <div className="dds"> Get in <span>Touch</span>   </div>
+          
           <div
-            className="blur s-blur1"
-            style={{ background: "#ABF1FF94" }}
+            className="blc"
+            style={{ background: "#ABF1FF94" , width:"100px", height:"150px" , borderBottomRightRadius: "100px" , borderTopRightRadius: "100px", marginLeft: "-130px"  ,marginTop:"-270px" }}
           ></div>
         </div>
       </div>
@@ -50,12 +50,17 @@ const Contact = () => {
           <input onClick={notify} type="submit" value="Send" className="button"/>
           <ToastContainer />
           <div className="msg">{done && "Thanks for Contacting CW2SG Our Company Will Contact Soon !"}</div>
-          <div
+          {/* <div
             className="blur c-blur1"
-            style={{ background: "var(--purple)" }}
-          ></div>
+            
+          ></div> */}
         </form>
+        <div
+            className="blc"
+            style={{ background: "var(--purple)" , width:"150px", height:"150px"  ,marginTop:" 370px", zIndex:"-1" , borderRadius:"190px" }}
+          ></div>
       </div>
+      
     </div>
   );
 };

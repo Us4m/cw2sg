@@ -32,10 +32,10 @@ const Testimonial = () => {
         <span></span>
         <span> CW2SG </span>
         <span>Team Members:</span>
-      <div className="blur t-blur1" style={{ background: "var(--purple)" }}></div>
-      <div className="blur t-blur2" style={{ background: "skyblue" }}></div>
+        
 
       </div>
+      
       <Swiper
         // install Swiper modules
         modules={[Pagination]}
@@ -53,8 +53,11 @@ const Testimonial = () => {
             </SwiperSlide>
           );
         })}
+        
       </Swiper>
+     
     </div>
+    
   );
 };
 

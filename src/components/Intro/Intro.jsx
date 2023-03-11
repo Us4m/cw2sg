@@ -39,9 +39,9 @@ const Intro = () => {
         </Link>
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+        <a href="https://github.com/Us4m"><img src={Github} alt="" /></a> 
+        <a href="https://www.linkedin.com/in/usama-hamad-6a2a571ba/"><img src={LinkedIn} alt="" /></a> 
+        <a href="https://www.instagram.com/cw2sg_services/"> <img src={Instagram} alt="" /></a> 
         </div>
       </div>
       {/* right image side */}
@@ -100,17 +100,12 @@ const Intro = () => {
         </motion.div>
 
 
-        <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
         <div
-          className="blur"
-          style={{
-            background: "#C1F5FF",
-            top: "17rem",
-            width: "21rem",
-            height: "11rem",
-            left: "-9rem",
-          }}
-        ></div>
+            className="blc"
+            style={{ background: "var(--purple)" , width:"100px", height:"150px" , borderBottomLeftRadius: "200px" , borderTopLeftRadius: "200px", marginLeft: "590px"  }}
+          ></div>
+        
+       
       </div>
     </div>
   );

@@ -7,6 +7,8 @@ import Humble from "../../img/humble.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import Resume from './resume.pdf';
+import { Link } from 'react-router-dom';
+
 
 const Services = () => {
   // context
@@ -27,14 +29,24 @@ const Services = () => {
         <span style={{ color: darkMode ? "white" : "" }}>Our Awesome</span>
         <span>services</span>
         <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
+          Our Services includes Websites Services, Graphic Services, and Content/Seo Services
           <br />
-          ispum is simpley dummy text of printing
+          In Website Services we provide Frontend/Backend and also UIUX design for clients websites.<br />
+          We have expertise in django (For Backend), React/Html/Css/Tailwind/Angular/NextJs (For Frontend) 
+          <br />
+          In Graphic Designing services we provide illustrations, logo design, vector,2d animation,<br /> cartoon tracing, Anime creation etc. Our expertise in adobe illustrator , photoshop, cartoon animator.
+          <br />
+          We Also have Experienced Content Writer And Seo Expert and provide content  <br /> related E-Gaming and Health Sciences. 
+          <br /> 
         </spane>
+        <Link to="Portfolio" className="navbar-link nav-link" >Learn more</Link>
         <a href={Resume} download>
           {/* <button className="button s-button">Download CV</button> */}
         </a>
-        <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
+        <div
+            className="blc"
+            style={{ background: "#ABF1FF94" , width:"100px", height:"150px" , borderBottomRightRadius: "100px" , borderTopRightRadius: "100px", marginLeft: "-130px"  ,marginTop:"-170px" }}
+          ></div>
       </div>
       {/* right */}
       <div className="cards">
@@ -72,15 +84,20 @@ const Services = () => {
             emoji={Humble}
             heading={"Content/Seo Services"}
             detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
+              "Technical SEO, On-page SEO, Off-page SEO, and Content"
             }
             color="rgba(252, 166, 31, 0.45)"
           />
         </motion.div>
         <div
-          className="blur s-blur2"
-          style={{ background: "var(--purple)" }}
-        ></div>
+            className="blc"
+            style={{ background: "var(--purple)" , width:"100px", height:"150px" , borderBottomLeftRadius: "100px" , borderTopLeftRadius: "100px", marginLeft: "750px"  ,marginTop:"-270px" }}
+          ></div>
+          <div
+            className="blc"
+            style={{ background: "var(--purple)" , width:"100px", height:"200px" , borderBottomLeftRadius: "200px" , borderTopLeftRadius: "200px", marginLeft: "750px"  ,marginTop:"770px" }}
+          ></div>
+        
       </div>
     </div>
   );

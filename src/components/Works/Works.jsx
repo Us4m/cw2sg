@@ -21,25 +21,26 @@ const Works = () => {
         <div className="awesome">
           {/* dark Mode */}
           <span style={{ color: darkMode ? "white" : "" }}>
-            What is 
-          </span><span>CW2SG</span>
+            What is  <div className="bl" style={{  }}>CW2SG</div>
+          </span><span></span>
           
           <spane>
           We are Two (2) Individuals working together to help you grow the Business.<br />
            We are professionals in the field of Content Writing (C), Web Development (W),<br />
-            SEO (S), and Graphics (G), making CW2SG.<br />
-            Our mission is to Give Life to your Imagination by making an incredibly beautiful<br />
-             Website,
-            filling it up with that alluring Content, and ranking it on Google with our 
-            <br />SEO. On top of that, we can provide you with Graphics Services like Logos,
-            <br /> UI/UX Design, Animations, and much more.
+            SEO (S), and Graphics (G), making CW2SG.
+            Our mission is to Give Life to your <br /> Imagination by making an incredibly beautiful Website,
+            filling it up with that alluring <br /> Content, and ranking it on Google with our 
+            SEO. On top of that, we can provide <br /> you with Graphics Services like Logos,
+             UI/UX Design, Animations, and much more.
           </spane>
+         <div className="bttr">
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Contact Us</button>
           </Link>
+          </div>
           <div
-            className="blur s-blur1"
-            style={{ background: "#ABF1FF94" }}
+            className="blc"
+            style={{ background: "#ABF1FF94" , width:"100px", height:"150px" , borderBottomRightRadius: "100px" , borderTopRightRadius: "100px", marginLeft: "-130px"  ,marginTop:"-270px" }}
           ></div>
         </div>
 

@@ -6,27 +6,43 @@
   height: 70vh;
 
 }
+.gg{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  margin-left: -500px;
+  margin-top: 200px;
+  
+}
 /* heading */
 .portfolio span:nth-of-type(1) {
-  color: var(--black);
-  font-size: 2rem;
-  font-weight: bold;
+  color: #006C73;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  
 }
 
 .portfolio span:nth-of-type(2) {
   color: var(--orange);
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 44px;
 }
 
 /* slider */
 .portfolio .swiper{
     overflow: visible!important;
+    margin-left: 60px;
+    margin-top: 35px;
 }
 
 .portfolio-slider {
   margin-top: 3rem;
-  width: 100%;
+  width: 60%;
 }
 
 .portfolio-slider .swiper-slide {
