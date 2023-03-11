@@ -54,3 +54,14 @@ font-size: 44px;
   border-radius: 19px;
 }
 
+@media screen and (max-width: 480px) {
+
+  .gg{
+    margin-left: 50px;
+    margin-top: -650px;
+  }
+  .portfolio span{
+    margin-left: -13px;
+  }
+  
+}

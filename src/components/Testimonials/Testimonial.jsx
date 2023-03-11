@@ -38,7 +38,6 @@ const Testimonial = () => {
       
       <Swiper
         // install Swiper modules
-        modules={[Pagination]}
         slidesPerView={1}
         pagination={{ clickable: true }}
       >
