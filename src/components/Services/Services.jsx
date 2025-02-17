@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import "./Services.css";
 import Card from "../Card/Card";
-import HeartEmoji from "../../img/heartemoji.png";
-import Glasses from "../../img/glasses.png";
-import Humble from "../../img/humble.png";
+import HeartEmoji from "../../img/py.png";
+import Glasses from "../../img/cl.png";
+import Humble from "../../img/ai.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import Resume from './resume.pdf';
@@ -26,17 +26,17 @@ const Services = () => {
       {/* left side */}
       <div className="awesome">
         {/* dark mode */}
-        <span style={{ color: darkMode ? "white" : "" }}>Our Awesome</span>
-        <span>services</span>
+        <span style={{ color: darkMode ? "white" : "" }}></span>
+        <span>What I Offer</span>
         <spane>
-          Our Services includes Websites Services, Graphic Services, and Content/Seo Services
+          <li>Designing tailored cloud solutions on AWS, Azure, and GCP.</li>
           <br />
-          In Website Services we provide Frontend/Backend and also UIUX design for clients websites.<br />
-          We have expertise in django (For Backend), React/Html/Css/Tailwind/Angular/NextJs (For Frontend) 
+          <li>Building robust APIs with Django REST Framework and FastAPI.</li><br />
+          <li> Integrating AI models (OpenAI, Generative AI) for smart systems</li>
           <br />
-          In Graphic Designing services we provide illustrations, logo design, vector,2d animation,<br /> cartoon tracing, Anime creation etc. Our expertise in adobe illustrator , photoshop, cartoon animator.
+          <li>Streamlining deployments and infrastructure with Docker and Kubernetes.</li>
           <br />
-          We Also have Experienced Content Writer And Seo Expert and provide content  <br /> related E-Gaming and Health Sciences. 
+          <li>Providing expert guidance in cloud, AI,  and DevOps to <br /> &nbsp;&emsp;ensure efficient.</li>  
           <br /> 
         </spane>
         <Link to="Portfolio" className="navbar-link nav-link" >Learn more</Link>
@@ -58,8 +58,8 @@ const Services = () => {
         >
           <Card
             emoji={HeartEmoji}
-            heading={"Graphic Services"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            heading={"Backend Development"}
+            detail={"Robust APIs with Django REST Framework and FastAPI for seamless integration and top-notch performance across web and mobile apps."}
           />
         </motion.div>
         {/* second card */}
@@ -70,8 +70,9 @@ const Services = () => {
         >
           <Card
             emoji={Glasses}
-            heading={"Websites Services"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+            
+            heading={"Cloud Solutions & DevOps"}
+            detail={"Scalable cloud architectures and automated workflows on AWS, Azure, and GCP. Secure, efficient systems with CI/CD pipelines using Docker and Kubernetes."}
           />
         </motion.div>
         {/* 3rd */}
@@ -82,9 +83,9 @@ const Services = () => {
         >
           <Card
             emoji={Humble}
-            heading={"Content/Seo Services"}
+            heading={"AI-Powered Innovations"}
             detail={
-              "Technical SEO, On-page SEO, Off-page SEO, and Content"
+              "Cutting-edge AI solutions like chatbots and automated transcription to bring intelligence and innovation to your projects."
             }
             color="rgba(252, 166, 31, 0.45)"
           />

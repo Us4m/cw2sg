@@ -3,8 +3,8 @@ import "./Intro.css";
 import seo from "../../img/seo.png";
 import web from "../../img/coding.png";
 import glassesimoji from "../../img/glassesimoji.png";
-import ux from "../../img/ux.png";
-import cnt from "../../img/cnt.png";
+// import cnt from "../../img/cnt.jpeg";
+import cnt from "../../img/cttc.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
@@ -26,23 +26,19 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
-          <span style={{ color: darkMode ? "white" : "" }}>We are</span>
-          <div className="ame">CW2SG Services</div>
+          <span style={{ color: darkMode ? "white" : "" }}>Hey there!</span>
+          <div className="ame"> Let’s innovate, and shape the future together!</div>
           
           <span>
-            IT Experts with high level of experience in Content Writing,  designing
-            and development, Seo, and Grphic Designing, producting the Quality work
+          
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
           <button className="button i-button">More Info</button>
+
         </Link>
         {/* social icons */}
-        <div className="i-icons">
-        <a href="https://github.com/Us4m"><img src={Github} alt="" /></a> 
-        <a href="https://www.linkedin.com/in/usama-hamad-6a2a571ba/"><img src={LinkedIn} alt="" /></a> 
-        <a href="https://www.instagram.com/cw2sg_services/"> <img src={Instagram} alt="" /></a> 
-        </div>
+
       </div>
       {/* right image side */}
       <div className="i-right">
@@ -63,33 +59,33 @@ const Intro = () => {
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv img={cnt} text1="CONTENT WRITING " text2="" />
+          <FloatinDiv img={cnt}  />
         </motion.div>
         
 
         {/* animation */}
         
         
-        <motion.div
+        {/* <motion.div
           initial={{ left: "9rem", top: "1rem" }}
           whileInView={{ left: "4rem", top: "7%" }}
           transition={transition}
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={web} text1="WEBSITE DEVELOPMENT" text2="" />
-        </motion.div>
-        <motion.div
+          {/* <FloatinDiv img={web} text1="WEBSITE DEVELOPMENT" text2="" />
+        </motion.div> */} 
+        {/* <motion.div
           initial={{ left: "9rem", top: "5rem" }}
           whileInView={{ left: "28%", top: "34%" }}
           transition={transition}
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={seo} text1="SEARCH ENGINE OPTIMIZATION" text2="" />
-        </motion.div>
+          {/* <FloatinDiv img={seo} text1="SEARCH ENGINE OPTIMIZATION" text2="" />
+        </motion.div> */} 
         
-        <motion.div
+        {/* <motion.div
           initial={{ top: "54%", left: "89%" }}
           whileInView={{ left: "52%", top: "60%" }}
           transition={transition}
@@ -97,7 +93,7 @@ const Intro = () => {
           
         >
           <FloatinDiv img={ux} text1="GRAPHIC DESIGN " text2="" />
-        </motion.div>
+        </motion.div> */}
 
 
         <div

@@ -17,7 +17,7 @@
 }
 /* heading */
 .portfolio span:nth-of-type(1) {
-  color: #006C73;
+  color: rgb(139, 0, 0);
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 800;

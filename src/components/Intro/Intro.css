@@ -21,24 +21,24 @@
   gap: 0.25rem;
 }
 .i-name > :nth-child(1) {
-  color: var(--black);
+  color: #7c0446;
   font-weight: 800;
   font-size: 3rem;
   font-family: 'Inter', sans-serif;
   
 }
 .i-name > :nth-child(2) {
-  color: #006C73;
+  color: #949494;
   font-family: 'Inter', sans-serif;
-  font-weight: 800;
-  font-size: 3rem;
+  font-weight: 00;
+  font-size: 2rem;
 
 }
 .i-name > :nth-child(3) {
   font-weight: 100;
   font-size: 12px;
   font-family: 'Inter', sans-serif;
-  color:rgb(0, 74, 105);
+  color:rgb(139, 0, 0);
   margin-top: 10px;
 }
 .i-button {

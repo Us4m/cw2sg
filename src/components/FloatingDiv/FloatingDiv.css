@@ -1,24 +1,25 @@
 .floatingDiv {
-  justify-content: space-around;
-  background: white;
-  box-shadow: var(--boxShadow);
-  border-radius: 17px;
+  justify-content: center;  /* Center the content */
+  background: none;         /* Remove any background */
+  box-shadow: none;         /* Remove box shadow */
+  border-radius: 17px;      /* Retain rounded corners */
   display: flex;
-  align-items: center;
-  padding: 0px 28px 0px 0px;
-  height: 4.5rem;
+  align-items: center;      /* Vertically center items */
+  padding: 0;               /* Remove padding */
+  height: auto;
+  margin-top: 30px;             /* Allow height to be dynamic based on image size */
+}
 
-}
 .floatingDiv > img {
-  transform: scale(0.4); 
-  
+  transform: scale(1);      /* Set scale to 1 for normal size */
+  width: 80%;              /* Make the image take the full width */
+  height: auto;             /* Maintain aspect ratio */
 }
+
 .floatingDiv > span {
-  font-family: sans-serif;
-  font-size: 16px;
-  /* yahan ye color add kia hy bad mein dark mode k waqt */
-  color: black;
+  display: none;            /* Hide any text */
 }
+
 
 @media screen and (max-width: 480px) {
   .w-right {

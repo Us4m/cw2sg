@@ -2,7 +2,9 @@ import React from "react";
 import "./Testimonial.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
+import Github from "../../img/github.png";
+import LinkedIn from "../../img/linkedin.png";
+import Instagram from "../../img/instagram.png";
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
 import profilePic1 from "../../img/profile1.jpeg";
@@ -14,24 +16,10 @@ const Testimonial = () => {
   const clients = [
     {
       img: profilePic1,
-      name:"Usama Hammad",
+      name:"What People Say About Me",
       review:
-        "An experienced Graphic Designer and Web Developer bringing more than 4 year’s of experience applying technical and creative abilities to diverse customer projects. Having great Communication skills Highly effective at collaborating with artistic project, production and administrative leadership to complete tasks according to schedule goals.",
+        "An exceptional professional with a rare combination of technical expertise and a solutions-focused approach. They excel in designing scalable cloud architectures, developing robust APIs, and implementing innovative AI-powered solutions. Their ability to streamline workflows through DevOps practices and deliver intelligent, cutting-edge systems demonstrates both technical skill and strategic thinking. Committed to quality, creativity, and precision, they consistently go above and beyond to ensure projects are not just completed but exceed expectations.",
     },
-    {
-      img: profilePic3,
-      name:"Ayesha Shehzad",
-      review:
-        "An experienced Wordpress Developer specialized in creating, maintaining, and customizing websites using the WordPress platform. Proficient in the technical aspects of WordPress, including its programming languages such as PHP, HTML, CSS, and JavaScript.",
-    },
-    {
-      img: profilePic2,
-      name:"Dawer Iqbal",
-      review:
-        "An experienced Content Writer and SEO master bringing more than 4 year’s of experience in Content Writing, as well as SEO. Currently an Admin (CTO) at ThePantherTech.com and Co-CEO at WhatGamingGear.com. His specialty is writing SEO Optimized Web Content for Tech and Gaming Niche.",
-    },
-
-   
    
   ];
 
@@ -39,8 +27,8 @@ const Testimonial = () => {
     <div className="t-wrapper" id="testimonial">
       <div className="t-heading">
         <span></span>
-        <span> CW2SG </span>
-        <span>Team Members:</span>
+        <span> Testimonials</span>
+
         
 
       </div>
@@ -58,13 +46,15 @@ const Testimonial = () => {
                 <img src={client.img} alt="" />
                 <div className="name"><b>{client.name}</b></div>
                 <div className="detail"> {client.review}</div>
+
+
               </div>
             </SwiperSlide>
           );
         })}
         
       </Swiper>
-     
+
     </div>
     
   );

@@ -21,17 +21,16 @@ const Works = () => {
         <div className="awesome">
           {/* dark Mode */}
           <span style={{ color: darkMode ? "white" : "" }}>
-            What is  <div className="bl" style={{  }}>CW2SG</div>
+       <div className="bl" style={{  }}>About Me</div>
           </span><span></span>
           
           <spane>
-          We are Two (2) Individuals working together to help you grow the Business.<br />
-           We are professionals in the field of Content Writing (C), Web Development (W),<br />
-            SEO (S), and Graphics (G), making CW2SG.
-            Our mission is to Give Life to your <br /> Imagination by making an incredibly beautiful Website,
-            filling it up with that alluring <br /> Content, and ranking it on Google with our 
-            SEO. On top of that, we can provide <br /> you with Graphics Services like Logos,
-             UI/UX Design, Animations, and much more.
+          I’m a Cloud Engineer and Backend Python Developer with a passion for solving <br />
+          complex problems using AI and cloud technologies. I thrive on building scalable, <br />
+          secure, and cost-effective cloud infrastructures and applications. My journey has <br />
+          led me to work with technologies like OpenAI LLM models, Generative AI, and <br />
+          speech-to-text models. When I'm not coding, I'm exploring the latest trends in <br />
+          cloud computing, DevOps, and AI to stay ahead of the curve.
           </spane>
          <div className="bttr">
           <Link to="contact" smooth={true} spy={true}>
